@@ -1,0 +1,32 @@
+{
+  "name": "@bytelucas/shared",
+  "version": "1.0.0",
+  "description": "Shared utilities for Bytelucas microservices",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@elastic/elasticsearch": "^8.13.0",
+    "winston": "^3.10.0",
+    "winston-elasticsearch": "^0.17.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0"
+  },
+  "files": [
+    "build/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bytelucas/shared.git"
+  },
+  "author": "Lucas Nguyen",
+  "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  }
+}
